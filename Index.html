@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziqiang Patrick Huang | University of Waterloo</title>
+    <style>
+        /* Modern, Minimalist Academic Styling */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #222222;
+            --text-muted: #555555;
+            --accent-color: #007041; /* Clean Academic Green (or swap to UW Gold #FFD200 / Dark #000000) */
+            --border-color: #e0e0e0;
+            --max-width: 800px;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+            margin-bottom: 3rem;
+        }
+        nav .logo { font-weight: 700; font-size: 1.2rem; text-decoration: none; color: var(--text-color); }
+        nav .links a { margin-left: 1.5rem; text-decoration: none; color: var(--text-muted); font-weight: 500; }
+        nav .links a:hover { color: var(--accent-color); }
+
+        /* Profile Layout */
+        .profile-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        @media (min-width: 600px) {
+            .profile-container { grid-template-columns: 200px 1fr; }
+        }
+
+        .avatar-placeholder {
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+        }
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .bio h1 { margin-top: 0; margin-bottom: 0.5rem; font-size: 2.2rem; }
+        .bio .title { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .contact-info { font-size: 0.95rem; margin-top: 1.5rem; color: var(--text-muted); }
+        .contact-info a { color: var(--text-color); text-decoration: none; border-bottom: 1px dashed var(--text-muted); }
+        .contact-info a:hover { color: var(--accent-color); border-bottom-color: var(--accent-color); }
+
+        /* Section Styling */
+        section { margin-bottom: 3.5rem; scroll-margin-top: 2rem; }
+        h2 { font-size: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.3rem; margin-bottom: 1.2rem; }
+        
+        /* Lists and Items */
+        .course-list, .pub-list, .award-list { list-style: none; padding: 0; margin: 0; }
+        .list-item { margin-bottom: 1rem; }
+        .list-item .meta { font-weight: 600; color: var(--text-color); }
+        .list-item .desc { color: var(--text-muted); font-size: 0.95rem; }
+        
+        /* Publications Specific */
+        .pub-authors { font-size: 0.95rem; }
+        .pub-authors .me { font-weight: 600; }
+        .pub-venue { font-style: italic; color: var(--text-muted); font-size: 0.95rem; }
+        .pub-links { margin-top: 0.25rem; font-size: 0.85rem; }
+        .pub-links a { color: var(--accent-color); text-decoration: none; margin-right: 0.75rem; }
+        .pub-links a:hover { text-decoration: underline; }
+
+        footer {
+            margin-top: 5rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <nav>
+        <a href="#" class="logo">Ziqiang Patrick Huang</a>
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#publications">Publications</a>
+            <a href="#awards">Awards</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="profile-container">
+            <div class="avatar-side">
+                <!-- Replace 'profile.jpg' with your actual image file path later -->
+                <div class="avatar-placeholder">
+                    <!-- <img src="profile.jpg" alt="Ziqiang Patrick Huang" class="avatar-img"> -->
+                    [ Headshot Image ]
+                </div>
+            </div>
+            <div class="bio">
+                <h1>Ziqiang Patrick Huang</h1>
+                <div class="title">Assistant Professor, Teaching Stream</div>
+                <p>
+                    I am an Assistant Professor (Teaching Stream) in the Department of Electrical and Computer Engineering at the University of Waterloo. My primary focus lies in cultivating the next generation of engineers through rigorous and modern core computing curriculum.
+                </p>
+                <p>
+                    My technical and research interests are centered on <strong>high-performance and power-efficient computer architecture</strong>. My past work spans the areas of compiler performance optimization, architectural hardware safety, and runtime system design for dynamic resource allocation.
+                </p>
+                <p>
+                    I received my PhD in Computer Engineering from <strong>Duke University</strong> in 2019. Prior to joining academia full-time, I gained industry perspectives working as a research intern within the Architecture Research Team at <strong>Arm</strong>.
+                </p>
+                
+                <div class="contact-info">
+                    <strong>Email:</strong> <a href="mailto:ziqiang.huang@uwaterloo.ca">ziqiang.huang@uwaterloo.ca</a> &nbsp;|&nbsp; 
+                    <strong>Office:</strong> PSE (Room 5424) &nbsp;|&nbsp; 
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Section -->
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <ul class="course-list">
+                <li class="list-item">
+                    <span class="meta">ECE 250 - Algorithms and Data Structures</span>
+                    <div class="desc">Data structures, storage allocation, hierarchical memory performance, and algorithm analysis (Big-O notation). Implementation and engineering trade-offs in C++.</div>
+                </li>
+                <li class="list-item">
+                    <span class="meta">ECE 222 - Digital Computers</span>
+                    <div class="desc">Computer organization, instruction set architectures, assembly language, processor data path, pipelining, and memory hierarchies.</div>
+                </li>
+                <li class="list-item">
+                    <span class="meta">ECE 350 - Real-time Operating Systems</span>
+                    <div class="desc">Multiprogramming, scheduling, synchronization, memory management, and performance optimization for resource-constrained environments.</div>
+                </li>
+                <li class="list-item">
+                    <span class="meta">ECE 621 - Computer Organizations</span>
+                    <div class="desc">Advanced topics in computer architecture, instruction-level parallelism, cache coherence protocols, and hardware acceleration architectures.</div>
+                </li>
+                <li class="list-item">
+                    <span class="meta">ECE 498A/B - Engineering Design Project</span>
+                    <div class="desc">Supervising capstone design groups working at the intersection of hardware/software co-design and high-performance computing platforms.</div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Publications Section (Placeholder to fill) -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <p class="desc" style="margin-bottom: 2rem;">A complete tracking of citations and metrics is available on my <a href="https://scholar.google.com/citations?user=lIrSEGgAAAAJ&hl=en" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 500;">Google Scholar Profile</a>.</p>
+            
+            <h3 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-color);">Refereed Conference & Journal Papers</h3>
+            <ul class="pub-list" style="margin-bottom: 2.5rem;">
+                <li class="list-item" style="margin-bottom: 1.5rem;">
+                    <div class="meta" style="font-size: 1.05rem; font-weight: 600;">Exploring the Impact of Switch Arity on Butterfly Fat Tree FPGA NoCs</div>
+                    <div class="pub-authors">I. Lang, <span class="me" style="font-weight: 600;">Z. Huang</span>, and N. Kapre.</div>
+                    <div class="pub-venue" style="font-style: italic; color: var(--text-muted); font-size: 0.95rem;">The 28th IEEE International Symposium On Field-Programmable Custom Computing Machines (FCCM), 2020.</div>
+                </li>
+
+                <li class="list-item" style="margin-bottom: 1.5rem;">
+                    <div class="meta" style="font-size: 1.05rem; font-weight: 600;">Dynasprint: Microarchitectural Sprints with Dynamic Utility and Thermal Management</div>
+                    <div class="pub-authors"><span class="me" style="font-weight: 600;">Z. Huang</span>, J. A. Joao, A. Rico, A. D. Hilton, and B. C. Lee.</div>
+                    <div class="pub-venue" style="font-style: italic; color: var(--text-muted); font-size: 0.95rem;">Proceedings of the 52nd Annual IEEE/ACM International Symposium on Microarchitecture (MICRO), 2019.</div>
+                </li>
+
+                <li class="list-item" style="margin-bottom: 1.5rem;">
+                    <div class="meta" style="font-size: 1.05rem; font-weight: 600;">Decoupling Loads for Nano-Instruction Set Computers</div>
+                    <div class="pub-authors"><span class="me" style="font-weight: 600;">Z. Huang</span>, A. D. Hilton, and B. C. Lee.</div>
+                    <div class="pub-venue" style="font-style: italic; color: var(--text-muted); font-size: 0.95rem;">Proceedings of the 43rd Annual ACM/IEEE International Symposium on Computer Architecture (ISCA), 2016</div>
+                </li>
+            </ul>
+
+            <h3 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-color);">Patents</h3>
+            <ul class="pub-list" style="margin-bottom: 2.5rem;">
+                <li class="list-item" style="margin-bottom: 1.5rem;">
+                    <div class="meta" style="font-size: 1.05rem; font-weight: 600;">Hardware Thread Scheduling</div>
+                    <div class="pub-authors">J. A. Joao, A. R. Carro, and <span class="me" style="font-weight: 600;">Z. Huang</span>.</div>
+                    <div class="pub-venue" style="font-style: italic; color: var(--text-muted); font-size: 0.95rem;">US Patent 10,261,835, Issued 2019.</div>
+                </li>
+
+                <li class="list-item" style="margin-bottom: 1.5rem;">
+                    <div class="meta" style="font-size: 1.05rem; font-weight: 600;">Defer Buffer</div>
+                    <div class="pub-authors">J. A. Joao, <span class="me" style="font-weight: 600;">Z. Huang</span>, and A. R. Carro.</div>
+                    <div class="pub-venue" style="font-style: italic; color: var(--text-muted); font-size: 0.95rem;">US Patent 10,275,250, Issued 2019.</div>
+                </li>
+            </ul>
+
+            <h3 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-color);">Dissertation</h3>
+            <ul class="pub-list">
+                <li class="list-item">
+                    <div class="meta" style="font-size: 1.05rem; font-weight: 600;">Coordinating Software and Hardware for Performance Under Power Constraints</div>
+                    <div class="pub-authors"><span class="me" style="font-weight: 600;">Z. P. Huang</span></div>
+                    <div class="pub-venue" style="font-style: italic; color: var(--text-muted); font-size: 0.95rem;">PhD Dissertation, Department of Electrical and Computer Engineering, Duke University, 2019.</div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Awards Section (Placeholder to fill) -->
+        <section id="awards">
+            <h2>Awards & Recognition</h2>
+            <ul class="award-list">
+                <li class="list-item">
+                    <span class="meta">Institutional / Teaching Awards</span>
+                    <div class="desc">Faculty of Engineering Distinguished Performance Award, 2025</div>
+                    <div class="desc">James A. Field Teaching Excellence Award, 2024</div>
+                </li>
+                <li class="list-item">
+                    <span class="meta">Doctoral Research Fellowships</span>
+                    <div class="desc">Duke University Graduate Fellowship / Departmental Honors, 2014 - 2019.</div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ziqiang Patrick Huang. Built cleanly with plain HTML/CSS.</p>
+    </footer>
+
+</body>
+</html>
