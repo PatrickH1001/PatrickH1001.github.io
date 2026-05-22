@@ -52,7 +52,7 @@
 
         .avatar-placeholder {
             width: 200px;
-            height: 200px;
+            height: 250px;
             background-color: #f0f0f0;
             border-radius: 4px;
             display: flex;
@@ -74,6 +74,7 @@
         .contact-info { font-size: 0.95rem; margin-top: 1.5rem; color: var(--text-muted); }
         .contact-info a { color: var(--text-color); text-decoration: none; border-bottom: 1px dashed var(--text-muted); }
         .contact-info a:hover { color: var(--accent-color); border-bottom-color: var(--accent-color); }
+        
 
         /* Section Styling */
         section { margin-bottom: 3.5rem; scroll-margin-top: 2rem; }
@@ -120,11 +121,19 @@
         <!-- About Section -->
         <section id="about" class="profile-container">
             <div class="avatar-side">
-                <!-- Replace 'profile.jpg' with your actual image file path later -->
                 <div class="avatar-placeholder">
-                    <img src="profile.png" alt="Ziqiang Patrick Huang" class="avatar-img"> 
+                    <img src="profile.png" alt="Ziqiang Patrick Huang" class="avatar-img">
+                </div>
+                
+                <div class="contact-info sidebar-contact">
+                    <p><strong>Email:</strong><br><a href="mailto:ziqiang.huang@uwaterloo.ca">ziqiang.huang@uwaterloo.ca</a></p>
+                    <p><strong>Office:</strong><br>PSE (Room 5424)</p>
+                    <p><strong>Links:</strong><br>
+                        <a href="https://scholar.google.com/citations?user=lIrSEGgAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
+                    </p>
                 </div>
             </div>
+            
             <div class="bio">
                 <h1>Ziqiang Patrick Huang</h1>
                 <div class="title">Assistant Professor, Teaching Stream</div>
@@ -137,11 +146,6 @@
                 <p>
                     I received my PhD in Computer Engineering from <strong>Duke University</strong> in 2019. Prior to joining academia full-time, I gained industry perspectives working as a research intern within the Architecture Research Team at <strong>Arm</strong>.
                 </p>
-                
-                <div class="contact-info">
-                    <strong>Email:</strong> <a href="mailto:ziqiang.huang@uwaterloo.ca">ziqiang.huang@uwaterloo.ca</a> &nbsp;|&nbsp; 
-                    <strong>Office:</strong> PSE (Room 5424) &nbsp;|&nbsp; 
-                </div>
             </div>
         </section>
 
@@ -175,8 +179,7 @@
         <!-- Publications Section (Placeholder to fill) -->
         <section id="publications">
             <h2>Publications</h2>
-            <p class="desc" style="margin-bottom: 2rem;">A complete tracking of citations and metrics is available on my <a href="https://scholar.google.com/citations?user=lIrSEGgAAAAJ&hl=en" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 500;">Google Scholar Profile</a>.</p>
-            
+        
             <h3 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-color);">Refereed Conference & Journal Papers</h3>
             <ul class="pub-list" style="margin-bottom: 2.5rem;">
                 <li class="list-item" style="margin-bottom: 1.5rem;">
